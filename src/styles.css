@@ -2,3 +2,12 @@
   font-family: sans-serif;
   text-align: center;
 }
+html {
+  font-size: 62.5%;
+}
+button {
+  margin: 0.3rem;
+
+  background: none;
+  border: 1px solid;
+}
