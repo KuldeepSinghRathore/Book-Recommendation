@@ -4,10 +4,51 @@
 }
 html {
   font-size: 62.5%;
+  background: #111312;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+h1 {
+  text-transform: capitalize;
 }
 button {
   margin: 0.3rem;
 
-  background: none;
-  border: 1px solid;
+  /* background: none; */
+  /* border: 1px solid; */
+}
+button {
+  background-color: #e5e5e5;
+  border: 1px solid #b2b2b2;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+button:hover,
+button:focus {
+  background-color: #b4720d;
+  box-shadow: 0 0 5px 0 #b2b2b2;
+  color: whitesmoke;
+}
+.books {
+  /* border: 5px */
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+li {
+  border: 5px solid white;
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1rem;
 }

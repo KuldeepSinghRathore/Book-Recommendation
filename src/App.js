@@ -4,7 +4,8 @@ import "./styles.css";
 const booksRecommend = {
   Selfhelp: [
     { name: "How to Win Friends and Influence People", rating: "4.2/5" },
-    { name: "The Subtle Art of Not Giving a F*ck", rating: "3.9/5" }
+    { name: "The Subtle Art of Not Giving a F*ck", rating: "3.9/5" },
+    { name: "Rich Dad Poor Dad", rating: "4.1/5" }
   ],
   Novel: [
     {
@@ -14,6 +15,10 @@ const booksRecommend = {
     {
       name: "To Kill a Mockingbird",
       rating: "4.3/5"
+    },
+    {
+      name: "Out of My Mind",
+      rating: "4.4/5"
     }
   ],
   Biographies: [
@@ -24,6 +29,10 @@ const booksRecommend = {
     {
       name: "Wings of Fire",
       rating: "4.6/5"
+    },
+    {
+      name: "Long Walk to Freedom",
+      rating: "4.3/5"
     }
   ]
 };
@@ -42,14 +51,14 @@ export default function App() {
           <button onClick={() => genreClickHandler(genre)}>{genre}</button>
         ))}
       </div>
-      <hr />
-      <div style={{ textAlign: "left" }}>
-        <ul style={{ paddingInlineStart: "0" }}>
+      <br />
+      <div className="books">
+        <ul>
           {booksRecommend[selectedGenre].map((book) => (
             <li key={book.name}>
               {" "}
-              <div style={{ fontSize: "larger" }}> {book.name} </div>
-              <div style={{ fontSize: "smaller" }}> {book.rating} </div>
+              <div> {book.name} </div>
+              <div> {book.rating} </div>
             </li>
           ))}
         </ul>
